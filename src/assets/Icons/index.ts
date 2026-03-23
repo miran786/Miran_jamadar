@@ -44,3 +44,11 @@ export { default as NetlifyIcon } from "./netlify.svg"
 export { default as VercelIcon } from "./vercel.svg"
 export { default as VsCodeIcon } from "./vscode.svg"
 export { default as FigmaIcon } from "./figma.svg"
+
+// Cloud & DevOps
+export { default as DockerIcon } from "./docker.svg"
+export { default as AwsIcon } from "./aws.svg"
+export { default as KubernetesIcon } from "./kubernetes.svg"
+export { default as SpringIcon } from "./spring.svg"
+export { default as GoIcon } from "./golang.svg"
+export { default as ShieldIcon } from "./shield.svg"
