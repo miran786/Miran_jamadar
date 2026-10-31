@@ -276,7 +276,8 @@ export function mountParticlePortrait(container: HTMLElement, opts: PortraitOpti
     .decode()
     .then(() => {
       if (disposed) return
-      const maxPoints = container.clientWidth < 520 ? 15000 : 30000
+      // Phones (portrait column under ~420px) get half the particles.
+      const maxPoints = container.clientWidth < 420 ? 15000 : 30000
       sampled = sampleImage(img, maxPoints, accent)
       const geometry = new THREE.BufferGeometry()
       // `position` is required by three.js for bounds; the shader uses aTarget/aScatter.
