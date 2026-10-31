@@ -1,55 +1,21 @@
-# Rehan | Fullstack Web Developer 🚀
+# miran-jamadar.vercel.app
 
-Welcome to my personal portfolio repository! This project serves as a digital representation of my skills, projects, and experiences in the world of full-stack web development. I thrive on creating dynamic, interactive, and visually stunning web applications.
+Personal portfolio of **Miran Jamadar**, Software & AI Engineer (B.Tech CSE (AI), VIT Pune).
 
-## 💻 Preview
-![Portfolio Preview](public/Mockup_Preview.png)
+The hero portrait is a live WebGL particle system: the headshot is sampled into ~30k GPU particles that assemble on load, scatter away from the cursor and drift apart as you scroll.
 
-## 🌟 Features
-- **Optimized Performance:** Built with Astro for lightning-fast load times.
-- **Responsive Design:** Tailored for all devices using TailwindCSS.
-- **Interactive Animations:** Powered by GSAP for smooth, engaging transitions.
-- **SEO Friendly:** Enhanced visibility with Astro SEO integration.
-- **Dynamic Components:** Utilizes Preact for modular and reusable UI elements.
+## Stack
+- React 18 + TypeScript, bundled with Vite
+- Three.js with a custom GLSL point shader (`src/three/particlePortrait.ts`)
+- Hand-written CSS, no UI framework
+- Deployed on Vercel from this repo (`main` → production, other branches → preview)
 
-## 📚 Tools and Tech Stack
-This portfolio is built using modern web technologies to ensure performance, scalability, and maintainability:
+## Run locally
+```bash
+npm install
+npm run dev      # http://localhost:5173
+npm run build    # type-check + production build into dist/
+```
 
-<div align="center">
-      <a href="https://astro.build/" title="Astro"><img src="https://skillicons.dev/icons?i=astro" alt="Astro" width="40" height="40"/></a>&emsp;
-      <a href="https://preactjs.com/" title="Preact.js"><img src="https://raw.githubusercontent.com/ChiragChrg/ChiragChrg.github.io/main/icons/preactjs.svg" alt="Preact.js" width="40" height="40"/></a>&emsp;
-      <a href="https://www.typescriptlang.org/docs/" title="TypeScript"><img src="https://skillicons.dev/icons?i=typescript" alt="TypeScript" width="40" height="40"/></a>&emsp;
-      <a href="https://tailwindcss.com/docs/installation" title="TailwindCSS"><img src="https://skillicons.dev/icons?i=tailwind" alt="TailwindCSS" width="40" height="40"/></a>&emsp;
-      <a href="https://greensock.com/docs/" title="GSAP"><img src="https://raw.githubusercontent.com/ChiragChrg/ChiragChrg.github.io/main/icons/gsap.svg" alt="GSAP" width="40" height="40"/></a>&emsp;
-</div>
-
-## 🛠️ Installation and Setup
-Follow these steps to run the project locally on your machine:
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/rehanvd/portfolio.git
-   ```
-2. **Navigate to the project directory:**
-   ```bash
-   cd portfolio
-   ```
-3. **Install dependencies:**
-   ```bash
-   npm install
-   ```
-4. **Start the development server:**
-   ```bash
-   npm run dev
-   ```
-
-## 📄 License & Attribution
-This project is open-source and available under the [MIT License](LICENSE).
-
-**Design & Original Template Credit:**  
-A special thanks to **[ChiragChrg](https://github.com/ChiragChrg)** for the original repository structure and design template that this portfolio is based on. Proper attribution is given to honor the open-source community integrity and the original creator's hard work.
-
----
-<div align="center">
-  <b>Built with ❤️ by Rehan</b>
-</div>
+## Editing content
+All text lives in `src/content.ts`.
